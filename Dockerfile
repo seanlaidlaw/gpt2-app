@@ -8,7 +8,7 @@ RUN mkdir /gpt2-app
 WORKDIR /gpt2-app
 ADD . /gpt2-app
 RUN pip install -r requirements.txt
-RUN python app/main/gpt2/download_model.py 117M
+RUN python app/main/gpt2/download_model.py 124M
 
 RUN flask db init && \
     flask db migrate && \
